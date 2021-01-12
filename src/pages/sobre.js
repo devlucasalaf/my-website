@@ -11,8 +11,8 @@ import PageTitle from '../Components/PageTitle/index'
 const Sobre = () => {
     return (
         <div id='about-container'>
-            <PrevPageBtn pageName='home' path='http://localhost:3000/'/>
-            <NextPageBtn pageName='projetos' path='http://localhost:3000/projetos'/>  
+            <PrevPageBtn pageName='home' path='https://my-website-git-main.devlucasalaf.vercel.app/'/>
+            <NextPageBtn pageName='projetos' path='https://my-website-git-main.devlucasalaf.vercel.app/projetos'/>  
             <div id='about-wrapper'> 
                 <PageTitle title='SOBRE'/>               
                 <div id='diference-wrapper'>
@@ -40,8 +40,7 @@ const Sobre = () => {
                 </div>
                 <div id='skills-wrapper'>
                     <div id='perfil-photo-wrapper'>
-                        <img src="https://i.ibb.co/bgKJFVj/perfil.jpg" alt="perfil" border="0"></img>
-                        <p>Alo brasil</p>
+                        <img src="/lucas.jpg" alt="perfil" border="0"></img>
                     </div>
                     <div id='skills-box'>
                         
