@@ -6,7 +6,7 @@ import PageTitle from '../Components/PageTitle/index'
 const Contato = () => {
     return (
         <div id='contato-container'>
-            <PrevPageBtn pageName='projetos' path='http://localhost:3000/projetos'/>
+            <PrevPageBtn pageName='projetos' path='https://my-website-git-main.devlucasalaf.vercel.app/projetos'/>
             <div id='contato-wrapper'>
                 <PageTitle title='CONTATO'/>
             </div>

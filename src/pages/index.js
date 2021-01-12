@@ -28,7 +28,7 @@ export default function Home() {
         </p>  
         <p> <a href='/projetos'></a></p>     
       </div> 
-      <NextPageBtn path='http://localhost:3000/sobre' pageName='sobre'/>
+      <NextPageBtn path='https://my-website-git-main.devlucasalaf.vercel.app/sobre' pageName='sobre'/>
     </div>
   )
 }
