@@ -1,0 +1,151 @@
+@keyframes diference-icon-appear {
+    from {
+        opacity: 0;
+        transform: rotateY(180deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes diference-text-appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+div#about-wrapper {
+
+    margin-top: 6rem;    
+
+    #diference-wrapper {
+        margin-top: 5rem;
+
+            .diference-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                width: 25rem;
+                margin: 3rem auto 3rem auto;                
+
+                span {
+                    font-size: 6rem;
+                    color: #b11b5e;                    
+                }
+
+                span#icon-1 {
+                    animation: diference-icon-appear 1s;
+                }
+
+                span#icon-2 {
+                    animation: diference-icon-appear 1.5s;
+                }
+
+                span#icon-3 {
+                    animation: diference-icon-appear 2s;
+                }
+                
+
+                h2 {
+                    color: rgb(167, 164, 164);
+                    font-weight: bold;
+                    font-size: 3rem;
+                    margin-bottom: 1rem;
+                }
+
+                p {
+                    color: rgb(167, 164, 164);
+                    font-size: 2rem;
+                    text-align: center;
+                }
+
+                p#dif-text-1 {
+                    animation: diference-text-appear 1s;
+                }
+                p#dif-text-2 {
+                    animation: diference-text-appear 1.5s;
+                }
+                p#dif-text-3 {
+                    animation: diference-text-appear 2s;
+                }
+            }
+    }
+
+    div#skills-wrapper {
+
+        padding: 0rem 8rem 0rem 8rem;
+        margin-bottom: 3rem;
+        height: 30rem;
+        width: 100%;
+
+
+        #perfil-photo-wrapper {
+            overflow: hidden;
+                       
+            
+            img {
+                width: 20rem; 
+                border-radius: 50%;               
+            }
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    div#about-wrapper {
+
+        margin-top: 6rem;
+    
+        #about-title {
+            color: white;
+            text-align: center;
+            font-size: 4rem;
+            position: relative;      
+        }
+        
+    
+        #diference-wrapper {
+            margin-top: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            margin: 5.5rem auto;
+    
+                .diference-box {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+    
+                    width: 25rem;
+                    height: 25rem;
+                    margin: 3rem auto 3rem auto;
+    
+                    span {
+                        font-size: 8rem;
+                        color: #b11b5e
+                    }
+    
+                    h2 {
+                        color: rgb(192, 190, 190);
+                        font-weight: bold;
+                        font-size: 2.5rem;
+                        margin-bottom: 1rem;
+                    }
+    
+                    p {
+                        color: rgb(167, 164, 164);
+                        font-size: 1.5rem;
+                        text-align: center;
+                    }
+                }
+        }
+    }
+}

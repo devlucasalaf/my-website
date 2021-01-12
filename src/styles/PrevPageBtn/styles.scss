@@ -1,0 +1,130 @@
+@keyframes prev-page-out {
+    0% {
+        transform: translateX(0) ;
+    }
+    3%, 100% {
+        transform: translateX(-200%) ;
+    }
+}
+
+@keyframes prev-page-span-out {
+    30% {
+        margin-left: 8rem;
+        opacity: .8;
+    }
+    80% {
+        margin-left: 5rem;
+        opacity: .5;   
+    }
+    100% {
+        margin-left: 0rem;
+        opacity: .1;
+    }
+}
+
+
+.prev-page-wrapper {
+    display: none;
+}
+
+@media(min-width: 768px){ 
+    .prev-page-wrapper {
+        width: 15rem;
+        height: 5rem;
+        position: fixed;
+        top: 50%;
+        margin-top: -2.5rem;
+        left: 0rem;
+        overflow: hidden;
+        cursor: pointer;       
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        &:hover #prev-page-name .prev-off {
+            margin-left: 5rem;
+            opacity: 1;
+            
+        }
+        
+    
+        #prev-page-name {
+            overflow: hidden;                
+    
+            .prev-off {
+                font-size: 2rem;
+                font-weight: bold;
+                margin-right: 9rem;
+                color: rgb(212, 211, 211);
+                opacity: 0;
+                transition: .4s;
+            }
+            .prev-on {
+                font-size: 2rem;
+                font-weight: bold;
+                margin-right: 9rem;
+                color: rgb(212, 211, 211);
+                opacity: 0;
+                transition: 4s;
+            }
+            #go-out {
+                animation: prev-page-span-out .9s;
+            }
+        }
+    
+        
+    
+        #prev-btn {
+            width: 7.5rem;
+            height: 5rem;
+            cursor: pointer;
+            position: absolute;
+            left: 0;
+    
+            &:hover .prev-btn-lines {                    
+                background-color: rgb(212, 211, 211);
+            }
+            
+    
+            .prev-btn-lines {
+                width: 4rem;
+                height: .2rem;
+                background-color: rgb(88, 88, 88);
+                margin-left: 2rem;
+                border-radius: .8rem;
+    
+                transition: .3s;
+                                  
+            }
+    
+            #prev-line-1-before {
+                margin-bottom: 2.5rem;
+                margin-top: 1rem;
+                transform: rotate(-45deg); 
+                transition: transform .3s;                 
+            }
+    
+            #prev-line-2-before {
+                transform: rotate(45deg);  
+                transition: transform .3s; 
+            }
+    
+            #prev-line-1-after {
+                margin-bottom: 0rem;
+                margin-top: 2.4rem;
+                transform: rotate(0) ;                    
+                transition: transform .15s, margin .15s; 
+                animation: prev-page-out 10s;        
+                animation-delay: .3s;        
+            }
+    
+            #prev-line-2-after {
+                transform: rotate(0);  
+                transition: transform .15s, margin .15s; 
+                animation: prev-page-out 10s;
+                animation-delay: .3s;
+            }
+        }
+    }
+}

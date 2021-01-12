@@ -1,0 +1,193 @@
+@-webkit-keyframes diference-icon-appear {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+@keyframes diference-icon-appear {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+@-webkit-keyframes diference-text-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes diference-text-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+div#about-wrapper {
+  margin-top: 6rem;
+}
+
+div#about-wrapper #diference-wrapper {
+  margin-top: 5rem;
+}
+
+div#about-wrapper #diference-wrapper .diference-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 25rem;
+  margin: 3rem auto 3rem auto;
+}
+
+div#about-wrapper #diference-wrapper .diference-box span {
+  font-size: 6rem;
+  color: #b11b5e;
+}
+
+div#about-wrapper #diference-wrapper .diference-box span#icon-1 {
+  -webkit-animation: diference-icon-appear 1s;
+          animation: diference-icon-appear 1s;
+}
+
+div#about-wrapper #diference-wrapper .diference-box span#icon-2 {
+  -webkit-animation: diference-icon-appear 1.5s;
+          animation: diference-icon-appear 1.5s;
+}
+
+div#about-wrapper #diference-wrapper .diference-box span#icon-3 {
+  -webkit-animation: diference-icon-appear 2s;
+          animation: diference-icon-appear 2s;
+}
+
+div#about-wrapper #diference-wrapper .diference-box h2 {
+  color: #a7a4a4;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+div#about-wrapper #diference-wrapper .diference-box p {
+  color: #a7a4a4;
+  font-size: 2rem;
+  text-align: center;
+}
+
+div#about-wrapper #diference-wrapper .diference-box p#dif-text-1 {
+  -webkit-animation: diference-text-appear 1s;
+          animation: diference-text-appear 1s;
+}
+
+div#about-wrapper #diference-wrapper .diference-box p#dif-text-2 {
+  -webkit-animation: diference-text-appear 1.5s;
+          animation: diference-text-appear 1.5s;
+}
+
+div#about-wrapper #diference-wrapper .diference-box p#dif-text-3 {
+  -webkit-animation: diference-text-appear 2s;
+          animation: diference-text-appear 2s;
+}
+
+div#about-wrapper div#skills-wrapper {
+  padding: 0rem 8rem 0rem 8rem;
+  margin-bottom: 3rem;
+  height: 30rem;
+  width: 100%;
+}
+
+div#about-wrapper div#skills-wrapper #perfil-photo-wrapper {
+  overflow: hidden;
+}
+
+div#about-wrapper div#skills-wrapper #perfil-photo-wrapper img {
+  width: 20rem;
+  border-radius: 50%;
+}
+
+@media (min-width: 1024px) {
+  div#about-wrapper {
+    margin-top: 6rem;
+  }
+  div#about-wrapper #about-title {
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    position: relative;
+  }
+  div#about-wrapper #diference-wrapper {
+    margin-top: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+    margin: 5.5rem auto;
+  }
+  div#about-wrapper #diference-wrapper .diference-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 25rem;
+    height: 25rem;
+    margin: 3rem auto 3rem auto;
+  }
+  div#about-wrapper #diference-wrapper .diference-box span {
+    font-size: 8rem;
+    color: #b11b5e;
+  }
+  div#about-wrapper #diference-wrapper .diference-box h2 {
+    color: #c0bebe;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  div#about-wrapper #diference-wrapper .diference-box p {
+    color: #a7a4a4;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

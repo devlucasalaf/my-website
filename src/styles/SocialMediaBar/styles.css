@@ -1,0 +1,117 @@
+#social-media {
+  z-index: 998;
+  width: 18rem;
+  height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+#social-media p {
+  display: none;
+}
+
+#social-media a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-size: 3rem;
+  padding-right: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 6rem;
+  height: 6rem;
+}
+
+#social-media #linkedin {
+  background-color: #0077ba;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#social-media #github {
+  background-color: #4e545a;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#social-media #whatsapp {
+  background-color: green;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+@media (min-width: 768px) {
+  #social-media {
+    width: 10rem;
+    height: 18rem;
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: -4rem;
+    margin-top: -10.5rem;
+  }
+  #social-media p {
+    display: block;
+    font-size: 1rem;
+    color: #bdbaba;
+    text-align: right;
+    padding-right: .7rem;
+    padding-bottom: 1rem;
+  }
+  #social-media a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: white;
+    font-size: 3rem;
+    padding-right: 1.5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 10rem;
+    height: 6rem;
+  }
+  #social-media #linkedin {
+    background-color: #0077ba;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  #social-media #linkedin:hover {
+    margin-left: 2rem;
+  }
+  #social-media #github {
+    background-color: #4e545a;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  #social-media #github:hover {
+    margin-left: 2rem;
+  }
+  #social-media #whatsapp {
+    background-color: green;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  #social-media #whatsapp:hover {
+    margin-left: 2rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

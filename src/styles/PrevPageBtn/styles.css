@@ -1,0 +1,170 @@
+@-webkit-keyframes prev-page-out {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  3%, 100% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+}
+
+@keyframes prev-page-out {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  3%, 100% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+}
+
+@-webkit-keyframes prev-page-span-out {
+  30% {
+    margin-left: 8rem;
+    opacity: .8;
+  }
+  80% {
+    margin-left: 5rem;
+    opacity: .5;
+  }
+  100% {
+    margin-left: 0rem;
+    opacity: .1;
+  }
+}
+
+@keyframes prev-page-span-out {
+  30% {
+    margin-left: 8rem;
+    opacity: .8;
+  }
+  80% {
+    margin-left: 5rem;
+    opacity: .5;
+  }
+  100% {
+    margin-left: 0rem;
+    opacity: .1;
+  }
+}
+
+.prev-page-wrapper {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .prev-page-wrapper {
+    width: 15rem;
+    height: 5rem;
+    position: fixed;
+    top: 50%;
+    margin-top: -2.5rem;
+    left: 0rem;
+    overflow: hidden;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .prev-page-wrapper:hover #prev-page-name .prev-off {
+    margin-left: 5rem;
+    opacity: 1;
+  }
+  .prev-page-wrapper #prev-page-name {
+    overflow: hidden;
+  }
+  .prev-page-wrapper #prev-page-name .prev-off {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 9rem;
+    color: #d4d3d3;
+    opacity: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .prev-page-wrapper #prev-page-name .prev-on {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 9rem;
+    color: #d4d3d3;
+    opacity: 0;
+    -webkit-transition: 4s;
+    transition: 4s;
+  }
+  .prev-page-wrapper #prev-page-name #go-out {
+    -webkit-animation: prev-page-span-out .9s;
+            animation: prev-page-span-out .9s;
+  }
+  .prev-page-wrapper #prev-btn {
+    width: 7.5rem;
+    height: 5rem;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+  }
+  .prev-page-wrapper #prev-btn:hover .prev-btn-lines {
+    background-color: #d4d3d3;
+  }
+  .prev-page-wrapper #prev-btn .prev-btn-lines {
+    width: 4rem;
+    height: .2rem;
+    background-color: #585858;
+    margin-left: 2rem;
+    border-radius: .8rem;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .prev-page-wrapper #prev-btn #prev-line-1-before {
+    margin-bottom: 2.5rem;
+    margin-top: 1rem;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+  }
+  .prev-page-wrapper #prev-btn #prev-line-2-before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+  }
+  .prev-page-wrapper #prev-btn #prev-line-1-after {
+    margin-bottom: 0rem;
+    margin-top: 2.4rem;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transition: margin .15s, -webkit-transform .15s;
+    transition: margin .15s, -webkit-transform .15s;
+    transition: transform .15s, margin .15s;
+    transition: transform .15s, margin .15s, -webkit-transform .15s;
+    -webkit-animation: prev-page-out 10s;
+            animation: prev-page-out 10s;
+    -webkit-animation-delay: .3s;
+            animation-delay: .3s;
+  }
+  .prev-page-wrapper #prev-btn #prev-line-2-after {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transition: margin .15s, -webkit-transform .15s;
+    transition: margin .15s, -webkit-transform .15s;
+    transition: transform .15s, margin .15s;
+    transition: transform .15s, margin .15s, -webkit-transform .15s;
+    -webkit-animation: prev-page-out 10s;
+            animation: prev-page-out 10s;
+    -webkit-animation-delay: .3s;
+            animation-delay: .3s;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

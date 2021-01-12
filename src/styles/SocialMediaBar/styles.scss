@@ -1,0 +1,112 @@
+#social-media {
+    z-index: 998;
+    width: 18rem;
+    height: 6rem;
+    display: flex;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;  
+
+    p {
+        display: none;
+    }
+
+    a{
+        display: flex;
+        color: white;
+        font-size: 3rem;
+        padding-right: 1.5rem;
+
+        align-items: center;
+        justify-content: flex-end;                
+
+        width: 6rem;
+        height: 6rem;
+    }
+
+    #linkedin {
+        background-color: #0077ba;
+        cursor: pointer;
+        transition: .3s;        
+    }
+
+    #github {
+        background-color: #4e545a;
+        cursor: pointer;
+        transition: .3s;       
+    }
+
+    #whatsapp {
+        background-color: green;
+        cursor: pointer;
+        transition: .3s;        
+    }
+
+}
+
+@media (min-width: 768px) {
+    #social-media {
+        width: 10rem;
+        height: 18rem;
+        display: block;
+        
+
+        position: fixed;
+        top: 50%;
+        left: -4rem;
+
+        margin-top: -10.5rem;
+
+        p {
+            display: block;
+            font-size: 1rem;
+            color: rgb(189, 186, 186);
+            text-align: right;
+            padding-right: .7rem;
+            padding-bottom: 1rem;
+        }
+
+        a{
+            display: flex;
+            color: white;
+            font-size: 3rem;
+            padding-right: 1.5rem;
+
+            align-items: center;
+            justify-content: flex-end;                
+
+            width: 10rem;
+            height: 6rem;
+        }
+        #linkedin {
+            background-color: #0077ba;
+            cursor: pointer;
+            transition: .3s;  
+            
+            &:hover {
+                margin-left: 2rem;
+            }
+        }
+    
+        #github {
+            background-color: #4e545a;
+            cursor: pointer;
+            transition: .3s;    
+            
+            &:hover {
+                margin-left: 2rem;
+            }
+        }
+    
+        #whatsapp {
+            background-color: green;
+            cursor: pointer;
+            transition: .3s;    
+            
+            &:hover {
+                margin-left: 2rem;
+            }
+        }
+    }
+}

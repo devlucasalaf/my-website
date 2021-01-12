@@ -1,0 +1,170 @@
+@-webkit-keyframes next-page-out {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  3%, 100% {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+}
+
+@keyframes next-page-out {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  3%, 100% {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+}
+
+@-webkit-keyframes next-page-span-out {
+  30% {
+    margin-left: 0rem;
+    opacity: .8;
+  }
+  80% {
+    margin-left: 5rem;
+    opacity: .5;
+  }
+  100% {
+    margin-left: 20rem;
+    opacity: .1;
+  }
+}
+
+@keyframes next-page-span-out {
+  30% {
+    margin-left: 0rem;
+    opacity: .8;
+  }
+  80% {
+    margin-left: 5rem;
+    opacity: .5;
+  }
+  100% {
+    margin-left: 20rem;
+    opacity: .1;
+  }
+}
+
+.next-page-wrapper {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .next-page-wrapper {
+    width: 15rem;
+    height: 5rem;
+    position: fixed;
+    top: 50%;
+    margin-top: -2.5rem;
+    right: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .next-page-wrapper:hover #next-page-name .next-off {
+    margin-left: 4rem;
+    opacity: 1;
+  }
+  .next-page-wrapper #next-page-name {
+    overflow: hidden;
+  }
+  .next-page-wrapper #next-page-name .next-off {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 9rem;
+    color: #d4d3d3;
+    opacity: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .next-page-wrapper #next-page-name .next-on {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 9rem;
+    color: #d4d3d3;
+    opacity: 0;
+    -webkit-transition: 4s;
+    transition: 4s;
+  }
+  .next-page-wrapper #next-page-name #go-out {
+    -webkit-animation: next-page-span-out .9s;
+            animation: next-page-span-out .9s;
+  }
+  .next-page-wrapper #next-btn {
+    width: 7.5rem;
+    height: 5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+  }
+  .next-page-wrapper #next-btn:hover .next-btn-lines {
+    background-color: #d4d3d3;
+  }
+  .next-page-wrapper #next-btn .next-btn-lines {
+    width: 4rem;
+    height: .2rem;
+    background-color: #585858;
+    margin-left: 2rem;
+    border-radius: .8rem;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .next-page-wrapper #next-btn #next-line-1-before {
+    margin-bottom: 2.5rem;
+    margin-top: 1rem;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+  }
+  .next-page-wrapper #next-btn #next-line-2-before {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+  }
+  .next-page-wrapper #next-btn #next-line-1-after {
+    margin-bottom: 0rem;
+    margin-top: 2.4rem;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transition: margin .15s, -webkit-transform .15s;
+    transition: margin .15s, -webkit-transform .15s;
+    transition: transform .15s, margin .15s;
+    transition: transform .15s, margin .15s, -webkit-transform .15s;
+    -webkit-animation: next-page-out 10s;
+            animation: next-page-out 10s;
+    -webkit-animation-delay: .3s;
+            animation-delay: .3s;
+  }
+  .next-page-wrapper #next-btn #next-line-2-after {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transition: margin .15s, -webkit-transform .15s;
+    transition: margin .15s, -webkit-transform .15s;
+    transition: transform .15s, margin .15s;
+    transition: transform .15s, margin .15s, -webkit-transform .15s;
+    -webkit-animation: next-page-out 10s;
+            animation: next-page-out 10s;
+    -webkit-animation-delay: .3s;
+            animation-delay: .3s;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

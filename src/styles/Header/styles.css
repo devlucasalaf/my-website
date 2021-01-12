@@ -1,0 +1,170 @@
+@-webkit-keyframes menu-enter {
+  0% {
+    -webkit-transform: translateY(-10rem);
+            transform: translateY(-10rem);
+  }
+  100% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+}
+
+@keyframes menu-enter {
+  0% {
+    -webkit-transform: translateY(-10rem);
+            transform: translateY(-10rem);
+  }
+  100% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+}
+
+div#header-container .menu-btn {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  height: 18.2px;
+  z-index: 1000;
+}
+
+div#header-container .menu-btn .menu-bar {
+  width: 3.5rem;
+  height: .2rem;
+  background-color: white;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+div#header-container .menu-btn #bar2 {
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+}
+
+div#header-container .menu-btn #bar3 {
+  -webkit-transform: translateY(12px);
+          transform: translateY(12px);
+}
+
+div#header-container .menu-btn #bar1-open {
+  -webkit-transform: translateY(6px) rotateZ(-45deg);
+          transform: translateY(6px) rotateZ(-45deg);
+}
+
+div#header-container .menu-btn #bar2-open {
+  opacity: 0;
+}
+
+div#header-container .menu-btn #bar3-open {
+  -webkit-transform: translateY(2px) rotate(45deg);
+          transform: translateY(2px) rotate(45deg);
+}
+
+div#header-container div.menu-wrapper {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #272626;
+  -webkit-transition: .4s;
+  transition: .4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div#header-container div.menu-wrapper .menu-items {
+  display: block;
+  width: 90%;
+  height: 15rem;
+  border-radius: .7rem;
+  text-decoration: none;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 4rem;
+  color: white;
+  background-color: #292828;
+  cursor: pointer;
+  position: relative;
+}
+
+div#header-container div.menu-wrapper .menu-items:hover::before, div#header-container div.menu-wrapper .menu-items:hover::after {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+div#header-container div.menu-wrapper .menu-items::before {
+  content: " ";
+  height: 25%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background: rgba(36, 35, 35, 0.788);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+div#header-container div.menu-wrapper .menu-items::after {
+  content: " ";
+  height: 75%;
+  width: 100%;
+  right: 0;
+  top: 0;
+  position: absolute;
+  background: rgba(36, 35, 35, 0.801);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+div#header-container div.menu-wrapper #sobre-open {
+  -webkit-animation: menu-enter 2s;
+          animation: menu-enter 2s;
+}
+
+div#header-container div.menu-wrapper #projetos-open {
+  -webkit-animation: menu-enter 1.5s;
+          animation: menu-enter 1.5s;
+}
+
+div#header-container div#menu-closed {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+div#header-container div#menu-openned {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+@media (min-width: 768px) {
+  div#header-container div.menu-wrapper .menu-items {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

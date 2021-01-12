@@ -1,0 +1,129 @@
+@keyframes next-page-out {
+    0% {
+        transform: translateX(0) ;
+    }
+    3%, 100% {
+        transform: translateX(200%) ;
+    }
+}
+
+@keyframes next-page-span-out {
+    30% {
+        margin-left: 0rem;
+        opacity: .8;
+    }
+    80% {
+        margin-left: 5rem;
+        opacity: .5;   
+    }
+    100% {
+        margin-left: 20rem;
+        opacity: .1;
+    }
+}
+
+.next-page-wrapper {
+    display: none;
+}
+
+@media(min-width: 768px){ 
+    .next-page-wrapper {
+        width: 15rem;
+        height: 5rem;
+        position: fixed;
+        top: 50%;
+        margin-top: -2.5rem;
+        right: 1rem;
+        overflow: hidden;
+        cursor: pointer;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        &:hover #next-page-name .next-off {
+            margin-left: 4rem;
+            opacity: 1;
+            
+        }
+        
+    
+        #next-page-name {
+            overflow: hidden;                
+    
+            .next-off {
+                font-size: 2rem;
+                font-weight: bold;
+                margin-left: 9rem;
+                color: rgb(212, 211, 211);
+                opacity: 0;
+                transition: .4s;
+            }
+            .next-on {
+                font-size: 2rem;
+                font-weight: bold;
+                margin-left: 9rem;
+                color: rgb(212, 211, 211);
+                opacity: 0;
+                transition: 4s;
+            }
+            #go-out {
+                animation: next-page-span-out .9s;
+            }
+        }
+    
+        
+    
+        #next-btn {
+            width: 7.5rem;
+            height: 5rem;
+            cursor: pointer;
+            position: absolute;
+            right: 0;
+    
+            &:hover .next-btn-lines {                    
+                background-color: rgb(212, 211, 211);
+            }
+            
+    
+            .next-btn-lines {
+                width: 4rem;
+                height: .2rem;
+                background-color: rgb(88, 88, 88);
+                margin-left: 2rem;
+                border-radius: .8rem;
+    
+                transition: .3s;
+                                  
+            }
+    
+            #next-line-1-before {
+                margin-bottom: 2.5rem;
+                margin-top: 1rem;
+                transform: rotate(45deg); 
+                transition: transform .3s;                 
+            }
+    
+            #next-line-2-before {
+                transform: rotate(-45deg);  
+                transition: transform .3s; 
+            }
+    
+            #next-line-1-after {
+                margin-bottom: 0rem;
+                margin-top: 2.4rem;
+                transform: rotate(0) ;                    
+                transition: transform .15s, margin .15s; 
+                animation: next-page-out 10s;        
+                animation-delay: .3s;        
+            }
+    
+            #next-line-2-after {
+                transform: rotate(0);  
+                transition: transform .15s, margin .15s; 
+                animation: next-page-out 10s;
+                animation-delay: .3s;
+            }
+        }
+    }
+}
