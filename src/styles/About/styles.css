@@ -44,6 +44,7 @@
 
 div#about-wrapper {
   margin-top: 6rem;
+  overflow: hidden;
 }
 
 div#about-wrapper #diference-wrapper {
@@ -99,6 +100,9 @@ div#about-wrapper #diference-wrapper .diference-box p {
   color: #a7a4a4;
   font-size: 2rem;
   text-align: center;
+  line-height: 150%;
+  margin-top: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 div#about-wrapper #diference-wrapper .diference-box p#dif-text-1 {
@@ -117,24 +121,272 @@ div#about-wrapper #diference-wrapper .diference-box p#dif-text-3 {
 }
 
 div#about-wrapper div#skills-wrapper {
-  padding: 0rem 8rem 0rem 8rem;
-  margin-bottom: 3rem;
-  height: 30rem;
+  padding: 0rem 1.5rem 0rem 1.5rem;
+  margin-bottom: 5rem;
+  height: 100%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div#about-wrapper div#skills-wrapper .apresentation {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0rem;
+  -webkit-transform: translateX(-115%);
+          transform: translateX(-115%);
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  margin-top: 5rem;
+}
+
+div#about-wrapper div#skills-wrapper .apresentation h2 {
+  color: #a7a4a4;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+div#about-wrapper div#skills-wrapper .apresentation p {
+  color: #a7a4a4;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 140%;
+  margin-top: .5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div#about-wrapper div#skills-wrapper .apresentation p a {
+  display: block;
+  text-decoration: none;
+  color: #b11b5e;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 1rem;
+  position: relative;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+div#about-wrapper div#skills-wrapper .apresentation p a:hover {
+  text-decoration: underline;
+  opacity: .8;
+}
+
+div#about-wrapper div#skills-wrapper #apresentation {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
+div#about-wrapper div#skills-wrapper .skills-box {
+  width: 95%;
+  padding-top: 5rem;
+  -webkit-transform: translateX(115%);
+          transform: translateX(115%);
+  opacity: 0;
+  -webkit-transition: width 1.5s, -webkit-transform 1s;
+  transition: width 1.5s, -webkit-transform 1s;
+  transition: width 1.5s, transform 1s;
+  transition: width 1.5s, transform 1s, -webkit-transform 1s;
+}
+
+div#about-wrapper div#skills-wrapper .skills-box .skill-bar-wrapper {
+  width: 100%;
+  background-color: #a7a4a4;
+  height: 3rem;
+  margin: 0 auto 5rem auto;
+  position: relative;
+}
+
+div#about-wrapper div#skills-wrapper .skills-box .skill-bar-wrapper .skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20%;
+  height: 100%;
+  background-color: #b11b5e;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div#about-wrapper div#skills-wrapper .skills-box .skill-bar-wrapper .skill-bar {
+  display: block;
+  background-color: #d32372;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  height: 100%;
+}
+
+@-webkit-keyframes css-html-percent {
+  0% {
+    width: 0%;
+  }
+  0.1% {
+    width: 60%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes css-html-percent {
+  0% {
+    width: 0%;
+  }
+  0.1% {
+    width: 60%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@-webkit-keyframes react-js-percent {
+  0% {
+    width: 0%;
+  }
+  0.1% {
+    width: 50%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes react-js-percent {
+  0% {
+    width: 0%;
+  }
+  0.1% {
+    width: 50%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@-webkit-keyframes node-percent {
+  0% {
+    width: 0%;
+  }
+  0.1% {
+    width: 30%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes node-percent {
+  0% {
+    width: 0%;
+  }
+  0.1% {
+    width: 30%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+div#about-wrapper div#skills-wrapper .skills-box .skill-bar-wrapper #css-points {
+  -webkit-animation: css-html-percent 1000s infinite;
+          animation: css-html-percent 1000s infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+div#about-wrapper div#skills-wrapper .skills-box .skill-bar-wrapper #html-points {
+  -webkit-animation: css-html-percent 1000s infinite;
+          animation: css-html-percent 1000s infinite;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+div#about-wrapper div#skills-wrapper .skills-box .skill-bar-wrapper #react-points {
+  -webkit-animation: react-js-percent 1000s infinite;
+          animation: react-js-percent 1000s infinite;
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+}
+
+div#about-wrapper div#skills-wrapper .skills-box .skill-bar-wrapper #js-points {
+  -webkit-animation: react-js-percent 1000s infinite;
+          animation: react-js-percent 1000s infinite;
+  -webkit-animation-delay: 1.875s;
+          animation-delay: 1.875s;
+}
+
+div#about-wrapper div#skills-wrapper .skills-box .skill-bar-wrapper #node-points {
+  -webkit-animation: node-percent 1000s infinite;
+          animation: node-percent 1000s infinite;
+  -webkit-animation-delay: 1.9375s;
+          animation-delay: 1.9375s;
+}
+
+div#about-wrapper div#skills-wrapper .skills-box .skill-bar-wrapper .skill-percent {
+  position: absolute;
+  right: 1rem;
+  top: .6rem;
+  font-size: 1.6rem;
+  color: white;
+}
+
+div#about-wrapper div#skills-wrapper #skills-box {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
 }
 
 div#about-wrapper div#skills-wrapper #perfil-photo-wrapper {
   overflow: hidden;
+  height: 25rem;
 }
 
 div#about-wrapper div#skills-wrapper #perfil-photo-wrapper img {
   width: 20rem;
+  margin-top: -3rem;
   border-radius: 50%;
 }
 
 @media (min-width: 1024px) {
   div#about-wrapper {
-    margin-top: 6rem;
+    margin-top: 10rem;
+    padding: 0rem 8rem 0rem 8rem;
   }
   div#about-wrapper #about-title {
     color: white;
@@ -143,7 +395,6 @@ div#about-wrapper div#skills-wrapper #perfil-photo-wrapper img {
     position: relative;
   }
   div#about-wrapper #diference-wrapper {
-    margin-top: 5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -154,7 +405,7 @@ div#about-wrapper div#skills-wrapper #perfil-photo-wrapper img {
         -ms-flex-pack: center;
             justify-content: center;
     width: 80%;
-    margin: 5.5rem auto;
+    margin: 5rem auto 13rem auto;
   }
   div#about-wrapper #diference-wrapper .diference-box {
     display: -webkit-box;
@@ -172,7 +423,7 @@ div#about-wrapper div#skills-wrapper #perfil-photo-wrapper img {
             justify-content: center;
     width: 25rem;
     height: 25rem;
-    margin: 3rem auto 3rem auto;
+    margin: 3rem auto 5rem auto;
   }
   div#about-wrapper #diference-wrapper .diference-box span {
     font-size: 8rem;
@@ -188,6 +439,31 @@ div#about-wrapper div#skills-wrapper #perfil-photo-wrapper img {
     color: #a7a4a4;
     font-size: 1.5rem;
     text-align: center;
+  }
+  div#about-wrapper div#skills-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 30rem;
+    margin-bottom: 15rem;
+  }
+  div#about-wrapper div#skills-wrapper .apresentation {
+    width: 40%;
+    padding: 2rem;
+    margin-top: 0;
+  }
+  div#about-wrapper div#skills-wrapper .apresentation h2 {
+    font-size: 3rem;
+  }
+  div#about-wrapper div#skills-wrapper .skills-box {
+    width: 60%;
+  }
+  div#about-wrapper div#skills-wrapper .skills-box .skill-bar-wrapper {
+    width: 80%;
+  }
+  div#about-wrapper div#skills-wrapper .skills-box .skill-bar-wrapper .skill {
+    font-size: 1.6rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

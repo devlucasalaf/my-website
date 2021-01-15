@@ -20,10 +20,12 @@
 
 div#about-wrapper {
 
-    margin-top: 6rem;    
+    margin-top: 6rem;  
+    overflow: hidden;   
 
     #diference-wrapper {
         margin-top: 5rem;
+        
 
             .diference-box {
                 display: flex;
@@ -63,6 +65,9 @@ div#about-wrapper {
                     color: rgb(167, 164, 164);
                     font-size: 2rem;
                     text-align: center;
+                    line-height: 150%;
+                    margin-top: 2rem;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 }
 
                 p#dif-text-1 {
@@ -79,19 +84,191 @@ div#about-wrapper {
 
     div#skills-wrapper {
 
-        padding: 0rem 8rem 0rem 8rem;
-        margin-bottom: 3rem;
-        height: 30rem;
+        padding: 0rem 1.5rem 0rem 1.5rem;
+        margin-bottom: 5rem;
+        height: 100%;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;   
+            
+        
+
+        .apresentation {
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0rem;
+            transform: translateX(-115%);
+            opacity: 0;
+            transition: 1s;
+            margin-top: 5rem;        
+
+            h2 {
+                color: rgb(167, 164, 164);
+                    font-weight: bold;
+                    font-size: 2.5rem;
+                    margin-bottom: 1rem;
+                    margin-top: 2rem;
+            }
+
+            p {
+                    color: rgb(167, 164, 164);
+                    font-size: 1.6rem;
+                    text-align: center;
+                    line-height: 140%;
+                    margin-top: .5rem;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+                    a {
+                        display: block;
+                        text-decoration: none;
+                        color: #b11b5e;
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        margin-top: 1rem;
+                        position: relative;
+                        transition: .4s;                        
+
+                        &:hover {
+                            text-decoration: underline;
+                            opacity: .8;
+                        }
+                    }
+                }
+        }
+
+        #apresentation {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .skills-box {
+            width: 95%;
+            padding-top: 5rem;
+            transform: translateX(115%);
+            opacity: 0;
+            transition: width 1.5s, transform 1s; 
+
+            .skill-bar-wrapper {
+                width: 100%;
+                background-color: rgb(167, 164, 164);
+                height: 3rem;
+                margin: 0 auto 5rem auto;
+                position: relative;
+
+                .skill {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 20%;
+                    height: 100%;
+                    background-color: #b11b5e;
+                    color:rgb(255, 255, 255);
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+
+                .skill-bar {
+                    display: block;
+                    background-color: #d32372;
+                    position: absolute;
+                    top: 0;
+                    left: 20%;
+                    height: 100%;                              
+                }
+
+                @keyframes css-html-percent {
+                    0% {
+                        width: 0%;
+                    }
+                    0.1% {
+                        width: 60%;
+                    }
+                    100% {
+                        width: 60%;
+                    }
+                }
+
+                @keyframes react-js-percent {
+                    0% {
+                        width: 0%;
+                    }
+                    0.1% {
+                        width: 50%;
+                    }
+                    100% {
+                        width: 50%;
+                    }
+                }
+
+                @keyframes node-percent {
+                    0% {
+                        width: 0%;
+                    }
+                    0.1% {
+                        width: 30%;
+                    }
+                    100% {
+                        width: 30%;
+                    }
+                }
+
+                #css-points {                   
+                        animation: css-html-percent 1000s infinite;
+                        animation-delay: 1s;                                   
+                    
+                }
+                #html-points {
+                    animation: css-html-percent 1000s infinite;
+                    animation-delay: 1.5s;
+                    
+                }
+                #react-points {
+                    animation: react-js-percent 1000s infinite;
+                    animation-delay: 1.75s;
+                    
+                }
+                #js-points {
+                    animation: react-js-percent 1000s infinite;
+                    animation-delay: 1.875s;
+                    
+                }
+                #node-points {
+                    animation: node-percent 1000s infinite;
+                    animation-delay: 1.9375s;
+                    
+                }
+                
+
+                .skill-percent {
+                    position: absolute;
+                    right: 1rem;
+                    top: .6rem;
+                    font-size: 1.6rem;
+                    color: white;
+                }
+            }
+        }
+
+        #skills-box {
+            transform: translateX(0);
+            opacity: 1;
+        }
 
 
         #perfil-photo-wrapper {
             overflow: hidden;
-                       
+            height: 25rem;
+                                 
             
             img {
-                width: 20rem; 
-                border-radius: 50%;               
+                width: 20rem;
+                margin-top: -3rem;
+                border-radius: 50%; 
             }
         }
     }
@@ -100,8 +277,9 @@ div#about-wrapper {
 @media(min-width: 1024px) {
     div#about-wrapper {
 
-        margin-top: 6rem;
-    
+        margin-top: 10rem;
+        padding: 0rem 8rem 0rem 8rem;
+
         #about-title {
             color: white;
             text-align: center;
@@ -111,12 +289,11 @@ div#about-wrapper {
         
     
         #diference-wrapper {
-            margin-top: 5rem;
             display: flex;
             align-items: center;
             justify-content: center;
             width: 80%;
-            margin: 5.5rem auto;
+            margin: 5rem auto 13rem auto;
     
                 .diference-box {
                     display: flex;
@@ -126,7 +303,7 @@ div#about-wrapper {
     
                     width: 25rem;
                     height: 25rem;
-                    margin: 3rem auto 3rem auto;
+                    margin: 3rem auto 5rem auto;
     
                     span {
                         font-size: 8rem;
@@ -146,6 +323,34 @@ div#about-wrapper {
                         text-align: center;
                     }
                 }
+        }
+
+        div#skills-wrapper {
+            flex-direction: row;
+            height: 30rem;
+            margin-bottom: 15rem;
+
+            .apresentation {
+                width: 40%;
+                padding: 2rem;
+                margin-top: 0;
+
+                h2 {
+                    font-size: 3rem;
+                }
+            }
+
+            .skills-box {
+                width: 60%;
+
+                .skill-bar-wrapper {
+                    width: 80%;
+
+                    .skill {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
         }
     }
 }

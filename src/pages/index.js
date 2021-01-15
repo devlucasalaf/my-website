@@ -15,7 +15,7 @@ export default function Home() {
       <SocialMediaBar/>
       <div id='home-wrapper'>
         <h1 className='main-title'>Olá, sou <span className='highlight-name'>Lucas Alves</span>.<br/> Desenvolvedor front-end!</h1>
-        <p>
+        <p class='type-writer'>
           <Typewriter 
             onInit={(typeWriter) => {
               typeWriter
