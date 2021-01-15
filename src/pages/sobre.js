@@ -20,7 +20,7 @@ const Sobre = () => {
             let scrolled = window.pageYOffset || document.documentElement.scrollTop 
             let currentWidth = window.innerWidth
             if(currentWidth > 1024){
-                if(scrolled >= 300) {
+                if(scrolled >= 200) {
                     setStatusScrollPhoto(true)
                     setStatusScrollSkills(true)
                 } else {
