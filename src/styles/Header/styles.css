@@ -142,14 +142,19 @@ div#header-container div.menu-wrapper .menu-items::after {
   transition: .2s;
 }
 
+div#header-container div.menu-wrapper #home-open {
+  -webkit-animation: menu-enter 1.5s;
+          animation: menu-enter 1.5s;
+}
+
 div#header-container div.menu-wrapper #sobre-open {
-  -webkit-animation: menu-enter 2s;
-          animation: menu-enter 2s;
+  -webkit-animation: menu-enter 1s;
+          animation: menu-enter 1s;
 }
 
 div#header-container div.menu-wrapper #projetos-open {
-  -webkit-animation: menu-enter 1.5s;
-          animation: menu-enter 1.5s;
+  -webkit-animation: menu-enter .5s;
+          animation: menu-enter .5s;
 }
 
 div#header-container div#menu-closed {

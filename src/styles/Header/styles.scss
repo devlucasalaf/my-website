@@ -107,14 +107,18 @@
                 transform: translateX(100%);
                 transition: .2s;
             }
+
+            #home-open {
+                animation: menu-enter 1.5s;
+            }
     
             #sobre-open {
-                animation: menu-enter 2s;
+                animation: menu-enter 1s;
     
             }
     
             #projetos-open {
-                animation: menu-enter 1.5s;
+                animation: menu-enter .5s;
     
             }
         }
