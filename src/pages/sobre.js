@@ -19,18 +19,26 @@ const Sobre = () => {
         setInterval(() => {   
             let scrolled = window.pageYOffset || document.documentElement.scrollTop 
             let currentWidth = window.innerWidth
-            if(currentWidth > 1024){
-                if(scrolled >= 200) {
+            let currentHeight = window.innerHeight
+            if(currentWidth > 1023 && currentHeight <= 799 ){
+                if(scrolled >= 100) {
                     setStatusScrollPhoto(true)
                     setStatusScrollSkills(true)
                 } else {
                     return
-                }
-            } else {
-                if(scrolled >= 800) {
-                    setStatusScrollPhoto(true)                
-                } else {
-                    return
+                } 
+
+            
+            } else if(currentWidth > 1023 && currentHeight > 799) {
+                setStatusScrollPhoto(true)
+                setStatusScrollSkills(true)
+            } else if(currentWidth < 1023 && currentHeight <= 899){
+                if(scrolled >= 600) {
+                setStatusScrollPhoto(true)                
+            }  
+            } else if (currentWidth < 1023 && currentHeight > 899){
+                if(scrolled >=500){
+                    setStatusScrollPhoto(true)
                 }
             }
         }, 500)
@@ -38,10 +46,15 @@ const Sobre = () => {
         setInterval(() => {
             let scrolled = window.pageYOffset || document.documentElement.scrollTop 
             let currentWidth = window.innerWidth
-            if(scrolled >= 1200 && currentWidth < 1024) {
-                setStatusScrollSkills(true)
-            } else {
-                return
+            let currentHeight = window.innerHeight
+            if(currentWidth < 1023 && currentHeight <= 899) {
+                if(scrolled >= 1100) {
+                    setStatusScrollSkills(true)
+                }                
+            } else if(currentWidth < 1023 && currentHeight > 899) {
+                if(scrolled >= 800) {
+                    setStatusScrollSkills(true)
+                }
             }
         }, 500)
     }, [])    
