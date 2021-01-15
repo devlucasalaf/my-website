@@ -18,9 +18,7 @@ const Sobre = () => {
     useEffect(() => {
         setInterval(() => {   
             let scrolled = window.pageYOffset || document.documentElement.scrollTop 
-            let currentWidth = window.innerWidth            
-            console.log(currentWidth)
-            console.log(scrolled)
+            let currentWidth = window.innerWidth
             if(currentWidth > 1024){
                 if(scrolled >= 300) {
                     setStatusScrollPhoto(true)
