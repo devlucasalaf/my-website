@@ -1,4 +1,123 @@
 div#contato-wrapper {
   margin-top: 6rem;
 }
+
+div#contato-wrapper h2 {
+  color: #a7a4a4;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+
+div#contato-wrapper div#contato-form {
+  width: 95%;
+  max-width: 50rem;
+  height: 35rem;
+  margin: 3rem auto;
+  overflow: hidden;
+}
+
+div#contato-wrapper div#contato-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+div#contato-wrapper div#contato-form form input, div#contato-wrapper div#contato-form form textarea {
+  width: 100%;
+  margin: .25rem auto .25rem auto;
+  background-color: #252333;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 1rem;
+  font-size: 1.6rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div#contato-wrapper div#contato-form form input {
+  height: 4rem;
+}
+
+div#contato-wrapper div#contato-form form textarea {
+  height: 15rem;
+  overflow: auto;
+}
+
+div#contato-wrapper div#contato-form form #btn-submit-wrapper {
+  position: absolute;
+  width: 20rem;
+  height: 5rem;
+  bottom: -6rem;
+  right: 0;
+  overflow: hidden;
+  z-index: 10;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+div#contato-wrapper div#contato-form form #btn-submit-wrapper:hover #shade {
+  -webkit-transform: rotate(-15deg) translateX(120%);
+          transform: rotate(-15deg) translateX(120%);
+}
+
+div#contato-wrapper div#contato-form form #btn-shade {
+  position: absolute;
+  width: 20rem;
+  height: 5rem;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+div#contato-wrapper div#contato-form form #btn-shade span {
+  display: block;
+  background-color: #b11b5f;
+  width: 25rem;
+  height: 50rem;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+div#contato-wrapper div#contato-form form button {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  width: 20rem;
+  height: 5rem;
+  position: absolute;
+  bottom: 0rem;
+  right: 0;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+div#contato-wrapper div#contato-form form button #btn-square {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: .5rem;
+  height: .5rem;
+  background-color: black;
+}
+
+div#contato-wrapper div#contato-form form button:hover #btn-square {
+  background-color: white;
+}
 /*# sourceMappingURL=styles.css.map */

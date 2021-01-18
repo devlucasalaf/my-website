@@ -1,3 +1,113 @@
 div#contato-wrapper {
     margin-top: 6rem;
+
+    h2 {
+        color: rgb(167, 164, 164);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 4rem;
+    }
+     div#contato-form {
+         width: 95%;
+         max-width: 50rem;
+         height: 35rem;
+         margin: 3rem auto;
+         overflow: hidden;
+
+         form {
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: center;
+             position: relative;
+             width: 100%;
+             margin: 0 auto;
+             
+
+             input, textarea {
+                 width: 100%;
+                 margin: .25rem auto .25rem auto;
+                 background-color: rgb(37, 35, 51);
+                 border: none;
+                 outline: none;
+                 color: white;
+                 padding: 1rem;
+                 font-size: 1.6rem;
+                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             }
+             input {
+                height: 4rem;
+             }
+             textarea {
+                 height: 15rem;
+                 overflow: auto;
+             }
+
+             #btn-submit-wrapper {
+                position: absolute;
+                width: 20rem;
+                height: 5rem;
+                bottom: -6rem;
+                right: 0;
+                overflow: hidden;
+                z-index: 10;
+                background-color: transparent;
+                cursor: pointer;
+
+                &:hover #shade {
+                    transform: rotate(-15deg) translateX(120%);
+                }
+             }
+
+             #btn-shade {
+                 position: absolute;
+                 width: 20rem;
+                 height: 5rem;
+                 bottom: 0;
+                 right: 0;
+                 overflow: hidden;    
+
+                 span {
+                    display: block;
+                    background-color: #b11b5f;
+                    width: 25rem;
+                    height: 50rem;
+                    transition: .7s;                  
+                 }
+             }
+
+             button {
+                 border: 1px solid white;
+                 background-color: transparent;
+                 color: white;
+                 font-weight: bold;
+                 width: 20rem;
+                 height: 5rem;
+                 position: absolute;
+                 bottom: 0rem;
+                 right: 0;
+                 z-index: 1;        
+                 overflow: hidden;
+                 cursor: pointer;
+                 
+
+                 #btn-square {
+                     position: absolute;
+                     bottom: 0;
+                     right: 0;
+                     width: .5rem;
+                     height: .5rem;
+                     background-color: black;
+                 }   
+
+
+                 &:hover #btn-square {
+                     background-color: white;
+                 }
+                 
+                 
+             }
+         }
+     }
 }

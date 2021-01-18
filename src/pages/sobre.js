@@ -27,7 +27,6 @@ const Sobre = () => {
                 } else {
                     return
                 } 
-
             
             } else if(currentWidth > 1023 && currentHeight > 799) {
                 setStatusScrollPhoto(true)
