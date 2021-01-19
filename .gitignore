@@ -8,6 +8,10 @@
 .next
 node_modules
 
+.env.local
+googlespread.json
+
+
 # testing
 /coverage
 

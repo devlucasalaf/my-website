@@ -19,22 +19,61 @@ div#contato-wrapper div#contato-form {
 }
 
 div#contato-wrapper div#contato-form form {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+div#contato-wrapper div#contato-form form .text-error-off {
+  display: none;
+}
+
+div#contato-wrapper div#contato-form form .text-error {
+  color: #b11b5f;
+}
+
+div#contato-wrapper div#contato-form form .not-sucess {
+  opacity: 0;
+}
+
+div#contato-wrapper div#contato-form form .sucess {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #04c986;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 2rem;
+  color: #0e5a41;
   position: relative;
-  width: 100%;
-  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 5px #04c986;
+          box-shadow: 0px 0px 5px #04c986;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+div#contato-wrapper div#contato-form form .sucess :nth-child(2) {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+div#contato-wrapper div#contato-form form .sucess :nth-child(2):hover {
+  font-weight: bold;
+  color: #093828;
 }
 
 div#contato-wrapper div#contato-form form input, div#contato-wrapper div#contato-form form textarea {
