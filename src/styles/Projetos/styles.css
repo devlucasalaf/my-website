@@ -1,4 +1,140 @@
 div#projects-wrapper {
   margin-top: 6rem;
 }
+
+div#projects-wrapper .photos-container {
+  width: 95%;
+  max-width: 100rem;
+  margin: 10rem auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+div#projects-wrapper .photos-container .project-box {
+  width: 100%;
+  border-radius: 2rem;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+div#projects-wrapper .photos-container .project-box:hover a {
+  opacity: 1;
+  -webkit-transform: translateX(-50%) translateY(0);
+          transform: translateX(-50%) translateY(0);
+}
+
+div#projects-wrapper .photos-container .project-box:hover .project-info {
+  opacity: 1;
+  -webkit-transform: translateX(-50%) translateY(-20%);
+          transform: translateX(-50%) translateY(-20%);
+}
+
+div#projects-wrapper .photos-container .project-box:hover .shadow-div {
+  background-color: rgba(255, 255, 255, 0.938);
+}
+
+div#projects-wrapper .photos-container .project-box:hover span {
+  opacity: 1;
+}
+
+div#projects-wrapper .photos-container .project-box .shadow-div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: transparent;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+div#projects-wrapper .photos-container .project-box img {
+  width: 100%;
+}
+
+div#projects-wrapper .photos-container .project-box .project-info {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  -webkit-transition: .4s;
+  transition: .4s;
+  opacity: 0;
+  z-index: 1;
+}
+
+div#projects-wrapper .photos-container .project-box .project-info h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+}
+
+div#projects-wrapper .photos-container .project-box .project-info p {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #c91f6b;
+}
+
+div#projects-wrapper .photos-container .project-box span {
+  width: 15rem;
+  height: 3rem;
+  text-align: center;
+  background-color: #b11b5f;
+  position: absolute;
+  top: 5%;
+  font-size: 1.6rem;
+  right: -7%;
+  color: white;
+  padding: .5rem;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  -webkit-box-shadow: 1px 1px 4px #b11b5f;
+          box-shadow: 1px 1px 4px #b11b5f;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+div#projects-wrapper .photos-container .project-box a {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  width: 20rem;
+  height: 5rem;
+  background-color: #c91f6b;
+  border: 1px solid #c91f6b;
+  -webkit-transform: translateX(-50%) translateY(50%);
+          transform: translateX(-50%) translateY(50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  z-index: 1;
+  font-size: 1.6rem;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: .8rem;
+  opacity: 0;
+}
+
+div#projects-wrapper .photos-container .project-box a:hover {
+  background-color: #a51958;
+  color: white;
+}
 /*# sourceMappingURL=styles.css.map */

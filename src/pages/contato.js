@@ -4,6 +4,7 @@ import {HiOutlineX} from 'react-icons/hi'
 
 import PrevPageBtn from '../Components/PrevPageBtn/index'
 import PageTitle from '../Components/PageTitle/index'
+import ValorantBtn from '../Components/ValorantBtn/index'
 
 
 
@@ -135,12 +136,7 @@ const Contato = () => {
                             <span >Sua mensagem foi enviada com sucesso.</span>
                             <span onClick={closeSuccess}><HiOutlineX/></span>
                         </div>                        
-                        <div id='btn-submit-wrapper'>
-                            <button type='submit' onClick={save}>ENVIAR<span id='btn-square'></span></button>
-                            <div id='btn-shade'>
-                                <span id='shade'></span>
-                            </div> 
-                        </div>                                           
+                            <ValorantBtn save={save} name='ENVIAR'/>
                     </form>
                 </div>
                 

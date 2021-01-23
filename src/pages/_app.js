@@ -9,6 +9,7 @@ import '../styles/About/styles.css'
 import '../styles/PageTitle/styles.css'
 import '../styles/Projetos/styles.css'
 import '../styles/Contato/styles.css'
+import '../styles/ValorantBtn/styles.css'
 
 import Header from '../Components/Header/index'
 

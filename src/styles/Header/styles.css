@@ -61,6 +61,16 @@ div#header-container .menu-btn #bar3-open {
           transform: translateY(2px) rotate(45deg);
 }
 
+div#header-container .menu-btn:hover #bar1 {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+div#header-container .menu-btn:hover #bar3 {
+  -webkit-transform: translateY(14px);
+          transform: translateY(14px);
+}
+
 div#header-container div.menu-wrapper {
   position: fixed;
   bottom: 0;

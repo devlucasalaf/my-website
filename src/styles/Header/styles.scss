@@ -41,6 +41,14 @@
             #bar3-open {
                 transform: translateY(2px) rotate(45deg);
             }
+
+            &:hover #bar1 {
+                transform: translateY(-2px);
+            }
+
+            &:hover #bar3 {
+                transform: translateY(14px);
+            }
         }
     
         div.menu-wrapper {

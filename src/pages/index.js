@@ -19,7 +19,7 @@ export default function Home() {
           <Typewriter 
             onInit={(typeWriter) => {
               typeWriter
-                .changeDelay(30)
+                .changeDelay(20)
                 .typeString('Atuo com desenvolvimento de interfaces responsivas, amigáveis e dinâmicas. <br/>')
                 .typeString('Utilizando as tecnologias do <span style="color:  #b11b5e;">Javascript</span> e do <span style="color:  #b11b5e;">ReactJS</span> como framework.')
                 .start();
