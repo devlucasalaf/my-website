@@ -1,6 +1,14 @@
 div#projects-wrapper {
     margin-top: 6rem;
 
+    .project-subtitle {
+        text-align: center;
+        font-size: 2rem;
+        color: rgb(167, 164, 164);
+        margin-top: 10rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
     .photos-container {
         width: 95%;
         max-width: 100rem;
@@ -15,7 +23,11 @@ div#projects-wrapper {
             border-radius: 2rem;
             position: relative;
             overflow: hidden; 
-            transition: .4s;             
+            transition: .4s;  
+            
+            &:hover {
+                transform: scale(1.05);
+            }
             
             &:hover a {
                 opacity: 1;
@@ -46,7 +58,7 @@ div#projects-wrapper {
             }
 
             img {
-                width: 100%;
+                width: 105%;
             }
 
             .project-info {

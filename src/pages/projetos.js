@@ -24,7 +24,7 @@ const Projetos = () => {
         },
         {
             Name: 'VOB',
-            Description: 'Projeto para a ONG Viver o Bem.',
+            Description: 'Projeto para a ONG Viver o Bem. (Em andamento)',
             Language: 'ReactJS',
             Source: '/principal-vob.png',
             Site: 'https://vob-git-master.devlucasalaf.vercel.app/'
@@ -45,6 +45,7 @@ const Projetos = () => {
             <NextPageBtn pageName='contato' path='https://my-website-git-main.devlucasalaf.vercel.app/contato'/>
             <div id='projects-wrapper'>
                 <PageTitle title='PROJETOS'/>
+                <h2 className='project-subtitle'>Visualize abaixo alguns dos projetos que estou executando ou que já executei.</h2>
                 <div className='photos-container'>
                     {projects.map((project) => {
                         return (

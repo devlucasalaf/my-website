@@ -2,6 +2,14 @@ div#projects-wrapper {
   margin-top: 6rem;
 }
 
+div#projects-wrapper .project-subtitle {
+  text-align: center;
+  font-size: 2rem;
+  color: #a7a4a4;
+  margin-top: 10rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 div#projects-wrapper .photos-container {
   width: 95%;
   max-width: 100rem;
@@ -20,6 +28,11 @@ div#projects-wrapper .photos-container .project-box {
   overflow: hidden;
   -webkit-transition: .4s;
   transition: .4s;
+}
+
+div#projects-wrapper .photos-container .project-box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 div#projects-wrapper .photos-container .project-box:hover a {
@@ -54,7 +67,7 @@ div#projects-wrapper .photos-container .project-box .shadow-div {
 }
 
 div#projects-wrapper .photos-container .project-box img {
-  width: 100%;
+  width: 105%;
 }
 
 div#projects-wrapper .photos-container .project-box .project-info {
