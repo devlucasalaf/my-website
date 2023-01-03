@@ -7,14 +7,7 @@ import PageTitle from '../Components/PageTitle/index'
 
 const Projetos = () => {
 
-    const projects = [
-        {
-            Name: 'Sneaker',
-            Description: 'Projeto de simulação de loja virtual.',
-            Language: 'ReactJS',
-            Source: '/principal-sneaker.png',
-            Site: 'https://online-store.devlucasalaf.vercel.app/'
-        },
+    const projects = [     
         {
             Name: 'BeKind',
             Description: 'Projeto de clone da homepage do Vercel.',
@@ -24,10 +17,10 @@ const Projetos = () => {
         },
         {
             Name: 'VOB',
-            Description: 'Projeto para a ONG Viver o Bem. (Em andamento)',
+            Description: 'Projeto para a ONG Viver o Bem.',
             Language: 'ReactJS',
             Source: '/principal-vob.png',
-            Site: 'https://vob-git-master.devlucasalaf.vercel.app/'
+            Site: 'https://www.viverobem.org.br'
         },
         {
             Name: 'Conversor',
